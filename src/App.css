@@ -1,0 +1,280 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Marcellus&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Marcellus&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+/************************************/
+/*** 	 01. Global Variables	  ***/
+/************************************/
+
+:root {
+  /* --primary-color: #89ea5f; */
+  --primary-color: #5474fb;
+  --primary-color1: #0d0d0d;
+  --secondary-color: #5474fb;
+  --text-color: #888888;
+  --arrow-color: #e80000;
+  --accent-color: #ffd634;
+  --white-color: #ffffff;
+  --divider-color: #eaeaea;
+  --dark-divider-color: #ffffff1a;
+  --btn-color: #ffffffcc;
+  --btn6-color: #ffde5a;
+  --btn1-color: #a78b76;
+  --othr-color: #612e11;
+  --default-font: "Inter", sans-serif;
+  --default-font1: "Poppins", sans-serif;
+  --accent-font: "Onest", sans-serif;
+}
+
+/************************************/
+/*** 	   02. General css		  ***/
+/************************************/
+
+body {
+  font-size: 20px;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+html {
+  font-size: 100%;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+p {
+  line-height: 1.8em;
+  margin-bottom: 0 !important;
+  margin-top: 15px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-family: var(--default-font1);
+  font-weight: 600;
+  line-height: 1.2em;
+  color: var(--primary-color);
+  margin-bottom: 0 !important;
+}
+
+figure {
+  margin: 0;
+}
+
+a:hover,
+a:focus {
+  text-decoration: none;
+  outline: 0;
+}
+
+html,
+body {
+  width: 100%;
+  overflow-x: clip;
+}
+
+/* animation button */
+
+/* From Uiverse.io by ryota1231 */
+.animated-button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 8px 36px;
+  border: 4px solid;
+  border-color: transparent;
+  font-size: 16px;
+  background-color: var(--accent-color);
+  border-radius: 30px;
+  font-weight: 600;
+  color: var(--white-color);
+  box-shadow: 0 0 0 2px #ffffff;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+  justify-content: center;
+  /* margin: auto; */
+}
+
+.text-cen {
+  margin: auto;
+  margin-top: 30px !important;
+}
+
+.animated-button svg {
+  position: absolute;
+  width: 24px;
+  fill: var(--white-color);
+  z-index: 9;
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button .arr-1 {
+  right: 16px;
+}
+
+.animated-button .arr-2 {
+  left: -25%;
+}
+
+.animated-button .circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  background-color: var(--secondary-color);
+  border-radius: 30px;
+  opacity: 0;
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button .text {
+  position: relative;
+  z-index: 1;
+  transform: translateX(-12px);
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button:hover {
+  box-shadow: 0 0 0 12px transparent;
+  color: var(--white-color);
+  border-radius: 30px;
+  padding: 8px 36px;
+}
+
+.animated-button:hover .arr-1 {
+  right: -25%;
+}
+
+.animated-button:hover .arr-2 {
+  left: 16px;
+}
+
+.animated-button:hover .text {
+  transform: translateX(12px);
+}
+
+.animated-button:hover svg {
+  fill: var(--white-color);
+}
+
+.animated-button:active {
+  scale: 0.95;
+  box-shadow: 0 0 0 4px var(--accent-color);
+}
+
+.animated-button:hover .circle {
+  width: 220px;
+  height: 220px;
+  opacity: 1;
+}
+
+.title {
+  font-size: 45px;
+  line-height: 55px;
+  color: var(--primary-color1) !important;
+  font-weight: 500;
+  font-family: var(--default-font);
+  /* padding-top: 15px; */
+  /* text-transform: capitalize; */
+}
+.title span {
+  color: var(--primary-color);
+}
+/* span color */
+.title .highlight {
+  color: #28a745 !important;
+}
+
+.title-sm {
+  font-size: 140%;
+  line-height: 30px;
+  color: var(--primary-color1);
+  font-weight: 500;
+  font-family: var(--default-font);
+  /* padding-top: 15px; */
+  /* text-transform: capitalize; */
+}
+.word,
+.char {
+  display: inline-block;
+}
+
+.para {
+  font-size: 16px;
+  color: var(--text-color);
+  font-weight: 400;
+  font-family: var(--default-font1);
+  word-break: break-word;
+  line-height: 25px;
+}
+.hero-h1 {
+  font-size: 55px;
+  line-height: 70px;
+  color: var(--white-color);
+  font-weight: 500;
+  font-family: var(--default-font1);
+  /* padding-top: 15px; */
+  /* text-transform: capitalize; */
+}
+
+.h1-para {
+  font-size: 16px !important;
+  color: var(--white-color);
+  font-weight: 400;
+  font-family: var(--default-font1);
+  word-break: break-word;
+  line-height: 28px !important;
+  padding-top: 10px !important;
+}
+.sub-txt {
+  font-size: 120%;
+  /* color: var(--secondary-color); */
+  color: var(--accent-color);
+  font-weight: 600;
+  font-family: var(--default-font);
+  text-transform: capitalize;
+}
+
+.word {
+  display: inline-block;
+  white-space: pre;
+}
+
+.space {
+  display: inline-block;
+  width: 0.3em;
+}
+
+.char {
+  display: inline-block;
+}
+
+/* App.css */
+.reveal-left,
+.reveal-right {
+  opacity: 0;
+  transition: all 0.8s ease-out;
+}
+
+.reveal-left {
+  transform: translateX(-50px);
+}
+.reveal-right {
+  transform: translateX(50px);
+}
+
+.reveal-left.show,
+.reveal-right.show {
+  opacity: 1;
+  transform: translateX(0);
+}
