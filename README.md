@@ -1,16 +1,148 @@
-# React + Vite
+# Bluehorn ⚡
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern React application powered by **Vite** for lightning-fast development and optimized production builds.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Tech Stack
 
-## React Compiler
+- ⚛️ React 19
+- ⚡ Vite 7
+- 🎨 Bootstrap 5
+- 🌀 GSAP Animations
+- 🧭 React Router DOM
+- 🎠 React Slick / Swiper
+- 🎯 React Icons
+- 🧹 ESLint for code quality
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 📦 Installation
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Clone the repository:
+
+```bash
+git clone https://github.com/your-username/bluehorn.git
+cd bluehorn
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+---
+
+## 🛠 Development
+
+Start development server:
+
+```bash
+npm run dev
+```
+
+Vite will start a local server (usually at):
+
+```
+http://localhost:5173
+```
+
+---
+
+## 🏗 Build for Production
+
+Create an optimized production build:
+
+```bash
+npm run build
+```
+
+This generates a `dist/` folder with production-ready files.
+
+---
+
+## 🔎 Preview Production Build
+
+```bash
+npm run preview
+```
+
+---
+
+## 📂 Project Structure
+
+```
+bluehorn/
+│
+├── public/
+├── src/
+│   ├── components/
+│   ├── pages/
+│   ├── assets/
+│   ├── App.jsx
+│   └── main.jsx
+│
+├── package.json
+├── vite.config.js
+└── README.md
+```
+
+---
+
+## 🧭 Routing
+
+This project uses **react-router-dom v7**.
+
+Example usage:
+
+```jsx
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+```
+
+---
+
+## 🎨 Styling
+
+- Bootstrap 5
+- Custom CSS
+- Slick Carousel
+- Swiper
+
+Make sure to import required CSS in `main.jsx` or component files:
+
+```js
+import "bootstrap/dist/css/bootstrap.min.css";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import "swiper/css";
+```
+
+---
+
+## 🧹 Linting
+
+Run ESLint:
+
+```bash
+npm run lint
+```
+
+---
+
+## 📌 Requirements
+
+- Node.js >= 18
+- npm >= 9
+
+---
+
+## 📄 License
+
+Private project — not for public distribution.
+
+---
+
+## 👨‍💻 Author
+
+Developed with ❤️ using React + Vite.
