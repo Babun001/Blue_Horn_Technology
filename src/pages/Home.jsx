@@ -1,6 +1,6 @@
 import Header from "../component/Header";
 import Footer from "../component/Footer";
-import Banner from "../page-elements/home-elements/Banner";
+import Banner from "../page-elements/Home-elements/Banner.jsx";
 import "../page-elements/Home-elements/home-css/home.css";
 import AboutSection from "../page-elements/Home-elements/AboutSection";
 import ServiceSlider from "../page-elements/Home-elements/ServiceSlider";
